@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;
+@tailwind forms;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +30,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css の末尾などに追記 */
+.CircularProgressbar-path {
+  stroke: #3b82f6; /* 青系に */
+}
+.CircularProgressbar-trail {
+  stroke: #1f2937; /* グレー背景 */
+}
+.CircularProgressbar-text {
+  fill: white;
+  font-size: 24px;
+  dominant-baseline: middle;
+  text-anchor: middle;
 }
