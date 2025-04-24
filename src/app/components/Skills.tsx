@@ -29,6 +29,7 @@ const skillData: SkillCategory[] = [
       { name: 'YOLO', logo: '/images/yolo.svg', level: 85 },
       { name: 'React', logo: '/images/react.svg', level: 70 },
       { name: 'Next.js', logo: '/images/nextdotjs.svg', level: 70 },
+      { name: 'unity', logo: '/images/unity.svg', level: 70 },
     ],
   },
 ];
@@ -39,11 +40,11 @@ const Skills = () => {
   return(
     <section id="skills" className="py-20 px-4 bg-black text-write">
       <div className="max-w-6xl mx-auto apace-y-12">
-        <h2 className="text-3xl font-bold border-b-2 border-blue-400 pb-2">Skills</h2>
+        <h1 className="text-3xl font-bold border-b-2 border-blue-400 pb-2">Skills</h1>
 
         {skillData.map((category) => (
           <div key={category.title}>
-            <h3 className="text-2xl font-semibold mb-4">{category.title}</h3>
+            <h2 className="text-2xl font-semibold mb-4">{category.title}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {category.items.map((skill) => (
                 <div

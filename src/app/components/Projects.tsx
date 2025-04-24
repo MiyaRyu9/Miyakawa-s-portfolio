@@ -27,10 +27,17 @@ const projects: Project[] = [
     github: "https://github.com/MiyaRyu9/OnlinePreviewApp_Scripts",
   },
   {
-    title: "Next.jsポートフォリオサイト",
+    title: "ポートフォリオサイト",
     description: "自分の実績を紹介するためのダーク系デザインのポートフォリオ。",
     image: "/images/portfolio.png",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
+    github: "https://github.com/MiyaRyu9/Miyakawa-s-portfolio",
+  },
+  {
+    title: "YOLOを用いた渋滞地点プロットシステム",
+    description: "沖縄の渋滞状況をサイトから画像で取得し、YOLOで検出した地点をプロットするシステム。",
+    image: "/images/yolosystem.png",
+    tech: ["Python", "YOLOv5", "selenium"],
     github: "https://github.com/MiyaRyu9/Miyakawa-s-portfolio",
   },
   // 他にも追加OK

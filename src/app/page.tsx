@@ -11,17 +11,16 @@ export default function Home(){
   return(
     <div className="bg-black text-white">
       <Head>
-        <title>My Portfolio</title>
+        <title>Miyakawa's portfolio</title>
 
       </Head>
       <Header />
-      <main>
+      <>
         <About />
         <Skills />
         <Projects />
-        <Blog />
         <Contact />
-      </main>
+      </>
       <Footer />
     </div>
   )
