@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className ="text-xl font-bold text-white">
           Miyakawa Portfolio
         </h1>
-        <nav className="space-x-10">
+        <nav className="space-x-7">
           <Link href="/about" className="text-gray-200 hover:text-blue-400 transition">About</Link>
           <Link href="/projects" className="text-gray-200 hover:text-blue-400 transition">Projects</Link>
           <Link href="/skills" className="text-gray-200 hover:text-blue-400 transition">Skills</Link>

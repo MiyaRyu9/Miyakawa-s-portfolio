@@ -37,13 +37,22 @@ const About = () => {
           <h3 className="text-2xl font-semibold text-blue-400 mb-2">実績</h3>
           <ul className="space-y-2 border-l-4 border-blue-400 pl-4">
             <li>
-              <span className="font-bold">2024年 9月</span> - SISテクノサービスと産学連携でUnityとAI使ったサービス開発
+              <span className="font-bold">2024年 8月</span> - SISテクノサービスと産学連携でUnityとAI使ったサービス開発
+            </li>
+            <li>
+              <span className="font-bold">2024年 9月</span> - 人生初ハッカソン「Simpleformハッカソン」に参加
             </li>
             <li>
               <span className="font-bold">2025年 3月</span> - 高専WiCON本選に出場
             </li>
             <li>
               <span className="font-bold">2025年 3月</span> - 基本情報技術者試験取得
+            </li>
+            <li>
+              <span className="font-bold">2025年 5月</span> - DCON2024本選にてポスター発表
+            </li>
+            <li>
+              <span className="font-bold">2025年 5月</span> - WTP2025にて発表
             </li>
           </ul>
         </div>
