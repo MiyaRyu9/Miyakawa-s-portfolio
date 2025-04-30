@@ -11,16 +11,16 @@ const Footer = () => {
           <a href="https://qiita.com/あなたのユーザー名" target="_blank" rel="noopener noreferrer">
             <SiQiita />
           </a>
-          <a href="https://github.com/あなたのユーザー名" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/MiyaRyu9" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://www.instagram.com/あなたのユーザー名" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/rrry.miy" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
           <a href="https://twitter.com/あなたのユーザー名" target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
-          <a href="mailto:あなたのメールアドレス">
+          <a href="mailto:miyakawa928@gmail.com">
             <FaEnvelope />
           </a>
         </div>

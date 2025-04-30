@@ -12,7 +12,6 @@ export default function Home(){
     <div className="bg-black text-white">
       <Head>
         Miyakawa portfolio
-
       </Head>
       <Header />
       <>
