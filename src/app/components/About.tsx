@@ -1,6 +1,9 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import WAVES from "vanta/dist/vanta.waves.min";
+import * as THREE from "three";
+import Typewriter from "typewriter-effect";
 
 const timelineItems = [
   { year: "2023年", title: "沖縄高専入学", description: "" },
@@ -14,6 +17,33 @@ const timelineItems = [
 ];
 
 const About = () => {
+  // const vantaRef = useRef(null);
+  // const [vantaEffect, setVantaEffect] = useState<any>(null);
+
+  // useEffect(() => {
+  //   if (!vantaEffect) {
+  //     setVantaEffect(
+  //       WAVES({
+  //         el: vantaRef.current,
+  //         THREE: THREE,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         minHeight: 200.0,
+  //         minWidth: 200.0,
+  //         scale: 1.0,
+  //         scaleMobile: 1.0,
+  //         color: 0x1e90ff,
+  //         shininess: 80.0,
+  //         waveSpeed: 0.3,
+  //         zoom: 0.9,
+  //       })
+  //     );
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy();
+  //   };
+  // }, [vantaEffect]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -21,7 +51,8 @@ const About = () => {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <section id="about" className="py-24 px-4 bg-gradient-to-b from-gray-900 to-black text-white relative">
+      <section  id="about" className="py-24 px-4 text-white relative overflow-hidden"> 
+        {/* ref={vantaRef*/}
         <div className="max-w-6xl mx-auto space-y-20">
           {/* タイトル */}
           <motion.h2
@@ -33,7 +64,7 @@ const About = () => {
             About Me
           </motion.h2>
 
-          {/* 名前と所属・アイコン */}
+          {/* 名前と所属 */}
           <motion.div
             className="flex flex-col md:flex-row items-center justify-center gap-10"
             initial={{ opacity: 0, y: 40 }}
@@ -51,9 +82,45 @@ const About = () => {
             </div>
 
             <div className="text-center md:text-left">
-              <p className="text-4xl font-extrabold tracking-wide text-blue-300 drop-shadow-lg">宮川琉誠</p>
-              <p className="text-xl text-gray-300 mt-2">沖縄高等専門学校 情報通信システム工学科</p>
+              <p className="text-5xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-pulse drop-shadow-lg">
+                宮川琉誠
+              </p>
+              <p className="text-xl text-gray-300 mt-2 flex items-center gap-2 justify-center md:justify-start">
+                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 7.25 7 13 7 13s7-5.75 7-13c0-3.87-3.13-7-7-7z" />
+                </svg>
+                沖縄高等専門学校 情報通信システム工学科
+              </p>
+              <p className="text-l text-gray-200 mt-2 flex items-center gap-2 justify-center md:justify-start">
+                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V9H3v8a2 2 0 002 2z" />
+                </svg>
+                2007年 9月28日生まれ
+              </p>
             </div>
+          </motion.div>
+
+          {/* 動的な一文 */}
+          <motion.div
+            className="text-center text-xl text-blue-200 font-semibold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Typewriter
+              options={{
+                strings: [
+                  "AI×ハードウェア開発の研究をしています。",
+                  "インターンしたい。",
+                  "卒業後は今のところ編入を考えてます。",
+                  "SNS繋がりましょう。",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                deleteSpeed: 30,
+              }}
+            />
           </motion.div>
 
           {/* 自己紹介 */}
@@ -64,17 +131,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-gray-200 leading-relaxed text-xl">
-              機械学習・Unity・Web開発に取り組む学生です。現在はNext.jsを用いたポートフォリオ作成や、
-              ドローンによる災害支援技術の研究に関心があります。最先端の研究開発に関わることを目指しています。
+              AI×Web開発に取り組む高専3年生です。現在は、ドローンによる災害支援技術の研究に関心があり、ハードウェア設計も学んでいます。
+              最先端の研究開発に関わりたく、高専卒業後は大学編入を考えています。
             </p>
           </motion.div>
-
-          {/* スクロール促し */}
-          <div className="flex justify-center mt-4 animate-bounce text-blue-400">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
 
           {/* タイムライン */}
           <div className="relative mt-24">
@@ -89,7 +149,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="bg-gray-900/80 p-6 rounded-2xl shadow-xl border-l-4 border-blue-400">
+                  <div className="bg-gray-900/70 p-6 rounded-2xl shadow-xl border-l-4 border-gradient-to-r from-blue-400 to-purple-400 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                     <h4 className="text-xl font-bold text-blue-400">{item.year}</h4>
                     <p className="text-white text-lg font-semibold">{item.title}</p>
                     {item.description && <p className="text-gray-400 text-sm mt-1">{item.description}</p>}
