@@ -1,9 +1,10 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React  from "react";
 import { motion } from "framer-motion";
 // import WAVES from "vanta/dist/vanta.waves.min";
 // import * as THREE from "three";
 import Typewriter from "typewriter-effect";
+import Image from "next/image";
 
 const timelineItems = [
   { year: "2023年", title: "沖縄高専入学", description: "" },
@@ -73,7 +74,7 @@ const About = () => {
           >
             <div className="relative">
               <div className="rounded-full w-40 h-40 bg-gradient-to-tr from-blue-500 to-purple-600 p-1 shadow-2xl">
-                <img
+                <Image
                   src="/images/icon1.jpg"
                   alt="アイコン"
                   className="rounded-full object-cover w-full h-full border-4 border-white shadow-inner"
