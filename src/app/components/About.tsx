@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import WAVES from "vanta/dist/vanta.waves.min";
-import * as THREE from "three";
+// import WAVES from "vanta/dist/vanta.waves.min";
+// import * as THREE from "three";
 import Typewriter from "typewriter-effect";
 
 const timelineItems = [
