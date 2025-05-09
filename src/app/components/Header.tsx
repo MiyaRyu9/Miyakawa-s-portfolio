@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 shadow-md px-4 py-3">
-        <div className="relative flex items-center w-full">
+        <div className="flex items-center w-full">
           <div className="flex items-center space-x-3">
             <Image src="/images/favicon.svg" alt="" width={35} height={35} />
             
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
 
           {/* モバイル用ハンバーガーメニュー */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white absolte right-4 top-1/2 transform -translate-y-1/2">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white ml-auto">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
