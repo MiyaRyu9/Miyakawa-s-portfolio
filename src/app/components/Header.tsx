@@ -37,7 +37,7 @@ const Header = () => {
           </div>
 
           {/* モバイル用ハンバーガーメニュー */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white ml-auto">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white mr-auto">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
