@@ -78,6 +78,8 @@ const About = () => {
                   src="/images/icon1.jpg"
                   alt="アイコン"
                   className="rounded-full object-cover w-full h-full border-4 border-white shadow-inner"
+                   width={100}
+                   height={100}
                 />
               </div>
             </div>
