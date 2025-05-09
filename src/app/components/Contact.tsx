@@ -47,6 +47,13 @@ const Contact = () => {
           required
           className="bg-zinc-700 p-4 rounded-md border border-zinc-600 placeholder-gray-400 text-white"
         />
+        <input
+          type="text"
+          name="user_title"
+          placeholder="件名"
+          required
+          className="bg-zinc-700 p-4 rounded-md border border-zinc-600 placeholder-gray-400 text-white"
+        />
         <textarea
           name="message"
           placeholder="お問い合わせ内容"
