@@ -10,10 +10,10 @@ const timelineItems = [
   { year: "2023年", title: "沖縄高専入学", description: "" },
   { year: "2024年8月", title: "UnityとAIによるサービス開発", description: "SISテクノサービスとの産学連携" },
   { year: "2024年9月", title: "Simpleformハッカソン", description: "人生初ハッカソンに参加" },
-  { year: "2025年3月", title: "高専WiCON本選", description: "本選に出場" },
+  { year: "2025年3月", title: "高専WiCON本選", description: "先輩に連れて行かせてもらいました" },
   { year: "2025年3月", title: "基本情報技術者試験", description: "資格取得" },
   { year: "2025年5月", title: "DCON2024", description: "ポスター発表" },
-  { year: "2025年5月", title: "WTP2025", description: "登壇発表" },
+  { year: "2025年5月", title: "WTP2025", description: "登壇発表・パネルディスカッション予定" },
   { year: "~現在", title: "沖縄高専在学中", description: "" },
 ];
 
@@ -56,14 +56,14 @@ const About = () => {
         {/* ref={vantaRef*/}
         <div className="max-w-6xl mx-auto space-y-20">
           {/* タイトル */}
-          <motion.h2
+          {/* <motion.h2
             className="text-5xl font-bold text-center border-b-4 border-blue-500 pb-6 drop-shadow-xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             About Me
-          </motion.h2>
+          </motion.h2> */}
 
           {/* 名前と所属 */}
           <motion.div
@@ -114,8 +114,9 @@ const About = () => {
               options={{
                 strings: [
                   "AI×ハードウェア開発の研究をしています。",
+                  "webはフロントエンド中心にやっています。",
                   "インターンしたい。",
-                  "卒業後は今のところ編入を考えてます。",
+                  "卒業後は編入を考えてます。",
                   "SNS繋がりましょう。",
                 ],
                 autoStart: true,
@@ -134,8 +135,8 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-gray-200 leading-relaxed text-xl">
-              AI×Web開発に取り組む高専3年生です。現在は、ドローンによる災害支援技術の研究に関心があり、ハードウェア設計も学んでいます。
-              最先端の研究開発に関わりたく、高専卒業後は大学編入を考えています。
+              AI×Web×ハードウェアを学んでいる高専3年生です。現在は、ドローンによる災害支援技術の研究に関心があり、ハードウェア設計も学んでいます。
+              最先端の研究・サービス開発に関わりたいため、高専卒業後は大学編入を考えています。
             </p>
           </motion.div>
 
