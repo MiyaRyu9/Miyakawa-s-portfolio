@@ -85,6 +85,8 @@ const About = () => {
             </div>
 
             <div className="text-center md:text-left">
+
+              <p className="text-3xl font-bold text-gray-200">ヘッダー調整中です</p>
               <p className="text-5xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-pulse drop-shadow-lg">
                 宮川琉誠
               </p>
@@ -94,12 +96,12 @@ const About = () => {
                 </svg>
                 沖縄高等専門学校 情報通信システム工学科
               </p>
-              <p className="text-l text-gray-200 mt-2 flex items-center gap-2 justify-center md:justify-start">
+              {/* <p className="text-l text-gray-200 mt-2 flex items-center gap-2 justify-center md:justify-start">
                 <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V9H3v8a2 2 0 002 2z" />
                 </svg>
                 2007年 9月28日生まれ
-              </p>
+              </p> */}
             </div>
           </motion.div>
 

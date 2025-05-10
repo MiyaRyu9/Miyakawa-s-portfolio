@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <header className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 shadow-md px-4 py-3">
         <div className="flex items-center w-full">
-          <div className="flex items-center space-x-3">
+          <div className="space-x-3 mr-auto">
             <Image src="/images/favicon.svg" alt="" width={35} height={35} />
             
           </div>
