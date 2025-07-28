@@ -1,3 +1,5 @@
+フロントエンドの学習ついでに開発した自身のポートフォリオサイトです。
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
